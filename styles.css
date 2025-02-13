@@ -162,13 +162,12 @@ form label {
   font-weight: bold;
   margin: 10px 0 5px;
 }
-form input {
-  margin-left: -10px;
-}
+
 form input, form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
+  margin-left: -10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
