@@ -1,0 +1,216 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #00C000;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Sections */
+.hero {
+  background: url('images/hero.jpeg') center/cover;
+  text-align: center;
+  color: white;
+  height: 100vh;
+  
+
+}
+.header-text{
+  position: relative;
+  top: 30%;
+  font-size: 28px;
+  
+}
+
+.about, .gite-list, section {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Gîtes List */
+.gite-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gite {
+  background: white;
+  padding: 15px;
+  margin: 15px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gite img {
+  height: 70%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.gite h3 {
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: darkgoldenrod;
+  color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+
+  .gite-list {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+
+/* Autour du Gîte Section */
+.autour {
+  padding: 20px;
+  text-align: center;
+}
+
+.activity {
+  display: inline-block;
+  width: 400px;
+  margin: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.activity img {
+  height: 200px;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.activity .text{
+  margin-top: 10px;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .activity {
+      width: 90%;
+      margin: 10px auto;
+  }
+}
+
+
+
+/* Contact Page */
+.contact {
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+form input {
+  margin-left: -10px;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: darkgoldenrod;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: goldenrod;
+}
+
+/* Photos Gallery
+.gallery {
+  text-align: center;
+  padding: 20px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+.photo-grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+*/
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  form {
+      width: 90%;
+  }
+}
